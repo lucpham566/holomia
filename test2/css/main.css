@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+@keyframes moveIcon {
+  0% {
+    transform: translateY(-1rem); }
+  50% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-1rem); } }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif; }
+
+html {
+  font-size: 16px;
+  color: #505D68;
+  scroll-behavior: smooth; }
+  @media (max-width: 992px) {
+    html {
+      font-size: 0.9rem; } }
+
+body {
+  background-color: #f0f2f8; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+.title-section {
+  text-align: center; }
+  .title-section .title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold; }
+  .title-section .line {
+    margin: 2em auto;
+    border-bottom: 4px solid #ffc107;
+    width: 10%; }
+
+.container {
+  max-width: 1216px; }
+
+.title-cart {
+  font-size: 1.5rem;
+  font-weight: bold; }
+
+.btn-primary {
+  background-color: #3D5AFE; }
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-duration: 0.6s;
+  transition-property: opacity; }
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1; }
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  opacity: 0; }
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+  transform: translateX(0);
+  transform: translate3d(0, 0, 0); }
+
+header {
+  background-color: #1a191d;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  padding: 0.5em; }
+  header .navbar .navbar-brand {
+    height: 2.7em; }
+    header .navbar .navbar-brand img {
+      height: 100%; }
+  header .navbar .navbar-toggler {
+    color: #fff !important;
+    border-color: #757575; }
+  header .navbar .nav-item .nav-link {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #b6b6b6;
+    padding: 1em 1.5em; }
+    header .navbar .nav-item .nav-link:focus {
+      color: #fff; }
+    header .navbar .nav-item .nav-link:hover {
+      color: #fff; }
+
+footer {
+  background-color: #151515 !important; }
+  footer .box-fl {
+    display: flex;
+    justify-content: space-between;
+    padding: 4em 0; }
+    @media (max-width: 568px) {
+      footer .box-fl {
+        flex-direction: column; } }
+    footer .box-fl .list-menu {
+      padding: 1em; }
+      footer .box-fl .list-menu .link {
+        padding: 0.5em 1em;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase; }
+    footer .box-fl .list-media {
+      padding: 1em; }
+      footer .box-fl .list-media .item {
+        padding: 0.5em 1em;
+        color: #fff;
+        font-size: 1rem; }
+  footer .info-ft {
+    background: #000;
+    margin: 0;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #ffffff; }
+
+.home .banner {
+  height: 100vh;
+  position: relative; }
+  .home .banner .background {
+    background-image: url(../../img/assets/img/content/game-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+    filter: brightness(80%); }
+  .home .banner .caption {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    max-width: 100%;
+    padding: 1em; }
+    .home .banner .caption img {
+      max-width: 100%; }
+  .home .banner .icon {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    color: #fff;
+    animation: moveIcon 2s infinite; }
+.home .about {
+  position: relative;
+  padding: 5em 0; }
+  .home .about .background {
+    background-image: url(../../img/assets/img/content/bg-5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    filter: brightness(80%);
+    z-index: -1; }
+  .home .about .content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    padding: 1em; }
+.home .characters {
+  padding: 7em 0;
+  background-color: #0c1120; }
+  .home .characters .character-list .character-card {
+    margin-top: 1em; }
+    .home .characters .character-list .character-card .avatar {
+      width: 100%; }
+      .home .characters .character-list .character-card .avatar img {
+        width: 100%; }
+    .home .characters .character-list .character-card .content {
+      margin-top: 1em;
+      padding: 1em;
+      color: #fff;
+      border: 1px solid #4e4e4e; }
+      .home .characters .character-list .character-card .content hr {
+        border-color: #4e4e4e; }
+.home .overview {
+  padding: 7em 0;
+  position: relative; }
+  .home .overview .background {
+    background-image: url(../../img/assets/img/content/bg-3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    filter: brightness(70%) blur(3px);
+    z-index: -1; }
+  .home .overview .card-item {
+    border: 1px solid #505050;
+    border-radius: 5px;
+    padding: 2em 1em;
+    color: #fff;
+    text-align: center;
+    margin-top: 3em; }
+    .home .overview .card-item .avatar {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid #525252;
+      margin: auto; }
+      .home .overview .card-item .avatar img {
+        width: 100%; }
+    .home .overview .card-item .title {
+      color: #fff;
+      font-weight: bold;
+      margin: 1em 0; }
+    .home .overview .card-item .line {
+      width: 3em;
+      border-bottom: 3px solid #ffc107;
+      margin: 1em auto; }
+    .home .overview .card-item .info {
+      color: #ffc107 !important;
+      font-size: 0.8rem; }
+.home .game-carousel .carousel-inner .carousel-item {
+  height: 70vh;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover; }
+  @media (max-width: 568px) {
+    .home .game-carousel .carousel-inner .carousel-item {
+      height: 50vh; } }
+  .home .game-carousel .carousel-inner .carousel-item .caption {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(14, 9, 34, 0.8);
+    color: #fff;
+    padding: 3em;
+    text-align: center; }
+    @media (max-width: 768px) {
+      .home .game-carousel .carousel-inner .carousel-item .caption .text {
+        display: none; } }
+    @media (max-width: 568px) {
+      .home .game-carousel .carousel-inner .carousel-item .caption {
+        padding: 1em; }
+        .home .game-carousel .carousel-inner .carousel-item .caption .title {
+          font-size: 1rem; } }
+    .home .game-carousel .carousel-inner .carousel-item .caption .title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1em; }
+    .home .game-carousel .carousel-inner .carousel-item .caption .text {
+      line-height: 1.6em; }
+.home .contact {
+  position: relative;
+  padding: 5em 0;
+  background-color: #0c1120; }
+  .home .contact .content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8em;
+    font-size: 1.1rem;
+    padding: 1em; }
+  .home .contact .contact-form input {
+    border: 1px solid #a0a0a0;
+    background-color: transparent;
+    margin-bottom: 1em;
+    padding: 0.8em 1em;
+    color: #fff; }
+    .home .contact .contact-form input::placeholder {
+      color: #fff; }
+  .home .contact .contact-form textarea {
+    border: 1px solid #a0a0a0;
+    background-color: transparent;
+    margin-bottom: 1em;
+    padding: 0.8em 1em;
+    color: #fff; }
+    .home .contact .contact-form textarea::placeholder {
+      color: #fff; }
+  .home .contact .contact-form .btn {
+    font-weight: bold;
+    padding: 0.5em 2em; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,102 @@
+.content-screen {
+  margin-top: 2em;
+  margin-bottom: 200px;
+  min-height: 90vh;
+  overflow-x: hidden;
+
+  .container {
+    margin-top: 1em;
+    padding: 4em;
+    background-color: $color-white;
+
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    .box-text {
+      margin-top: 1em;
+      animation: moveInTop 2s ease;
+
+      .title {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #505d68;
+      }
+      .text-bold {
+        color: #a1aeb7;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      .text {
+        color: #a1aeb7;
+      }
+    }
+    .step-container {
+      margin-top: 1em;
+      animation: moveInRight 1s ease-out 2s backwards;
+
+      .steps {
+        .step-item {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          border: 2px solid $color-primary;
+          color: $color-primary;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 100px;
+          position: relative;
+          background-color: $color-white;
+          span {
+            font-weight: bold;
+          }
+          &::after {
+            content: "";
+            height: 100px;
+            width: 2px;
+            background-color: $color-primary;
+            position: absolute;
+            bottom: 0;
+            transform: translateY(100%);
+          }
+        
+          .caption {
+            position: absolute;
+            width: 300px;
+            right: 0;
+            top: 0.5em;
+            transform: translateX(110%);
+            .title {
+              font-size: 1.3rem;
+              font-weight: bold;
+              color: #505d68;
+            }
+            .text {
+              color: #a1aeb7;
+            }
+          }
+          &:last-child {
+            &::after {
+              content: "";
+              display: none;
+            }
+          }
+          &.step-1 {
+            .caption {
+              animation: moveInRightCaption 1s ease-out 4s backwards;
+            }
+          }
+          &.step-2 {
+            .caption {
+              animation: moveInRightCaption 1s ease-out 5s backwards;
+            }
+          }
+          &.step-3 {
+            .caption {
+              animation: moveInRightCaption 1s ease-out 6s backwards;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard1</title>
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- ----------header--------- -->
+    <header>
+      <nav class="navbar navbar-expand-sm container">
+        <div class="logo navbar-brand">
+          <span>Smart<b>VR</b></span>
+        </div>
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">DASHBOARD</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./content.html">CONTENT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">license </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+          </ul>
+          <div class="user">
+            <a name="" id="" class="btn btn-primary" href="#" role="button"
+              >Nâng cấp</a
+            >
+            <div class="drop-icon">
+              <div class="avatar">
+                <img src="./img/person1.jpg" alt="" />
+              </div>
+              <i class="fas fa-sort-down"></i>
+              <div class="drop-box">
+                <div class="head-box">
+                  <div class="avatar">
+                    <img src="./img/person1.jpg" alt="" />
+                  </div>
+                  <div class="content">
+                    <div class="title">Phạm Tiến Lực</div>
+                    <p class="text">lucpham566@Gmail.com</p>
+                  </div>
+                </div>
+                <div class="nav-list">
+                  <div class="nav-item">
+                    <a href="" class="nav-link">Lịch sử giao dịch</a>
+                  </div>
+                  <div class="nav-item">
+                    <a href="" class="nav-link">Cài đặt</a>
+                  </div>
+                  <div class="nav-item">
+                    <a href="" class="nav-link">Đăng xuất</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ----------main-------------- -->
+
+    <main class="dashboard">
+      <div class="container">
+        <div class="overview-list">
+          <div class="overview-item">
+            <div class="header-item">
+              <div class="image yellow">
+                <i class="fab fa-youtube"></i>
+              </div>
+              <div class="content">
+                <p class="text">Nội dung tải lên</p>
+                <h4 class="title">2/10</h4>
+              </div>
+            </div>
+            <hr class="line" />
+            <div class="info">
+              <a href="" class="link">Quản lý nội dung tải lên</a>
+            </div>
+          </div>
+          <div class="overview-item">
+            <div class="header-item">
+              <div class="image red">
+                <i class="fas fa-gamepad"></i>
+              </div>
+              <div class="content">
+                <p class="text">Nội dung tải lên</p>
+                <h4 class="title">2/10</h4>
+              </div>
+            </div>
+            <hr class="line" />
+            <div class="info">
+              <a href="" class="link">Gia hạn ngay</a>
+              <span>Hết hạn: 20/04/2018 </span>
+            </div>
+          </div>
+          <div class="overview-item">
+            <div class="header-item">
+              <div class="image green">
+                <i class="fas fa-box-open"></i>
+              </div>
+              <div class="content">
+                <p class="text">Nội dung tải lên</p>
+                <h4 class="title">2/10</h4>
+              </div>
+            </div>
+            <hr class="line" />
+            <div class="info">
+              <a href="" class="link">Nâng cấp gói</a>
+              <span>Hết hạn: 20/04/2018 </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="history-table">
+          <h4 class="title-card">Lịch sử thuê</h4>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Trạng thái</th>
+                <th>Gói</th>
+                <th>Số kính</th>
+                <th>Ngày bắt đầu</th>
+                <th>Ngày kết thúc</th>
+                <th>Nhân viên phụ trách</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">BD01345</td>
+                <td>
+                  <span class="badge badge-1">Đang thuê</span>
+                </td>
+                <td>Gói 1</td>
+                <td>20</td>
+                <td>20/04/2019</td>
+                <td>20/05/2019</td>
+                <td>Nguyễn Thị Nga</td>
+                <td><a class="btn btn-primary btn-sm" href="#">Gia hạn</a></td>
+              </tr>
+              <tr>
+                <td scope="row">BD01345</td>
+                <td>
+                  <span class="badge badge-2">Chờ thanh toán</span>
+                </td>
+                <td>Gói 1</td>
+                <td>20</td>
+                <td>20/04/2019</td>
+                <td>20/05/2019</td>
+                <td>Nguyễn Thị Nga</td>
+                <td><a class="btn btn-primary btn-sm" href="#">Gia hạn</a></td>
+              </tr>
+              <tr>
+                <td scope="row">BD01345</td>
+                <td>
+                  <span class="badge badge-3">Hoàn thiện</span>
+                </td>
+                <td>Gói 1</td>
+                <td>20</td>
+                <td>20/04/2019</td>
+                <td>20/05/2019</td>
+                <td>Nguyễn Thị Nga</td>
+                <td><a class="btn btn-primary btn-sm" href="#">Gia hạn</a></td>
+              </tr>
+              <tr>
+                <td scope="row">BD01345</td>
+                <td>
+                  <span class="badge badge-4">Gần hết hạn</span>
+                </td>
+                <td>Gói 1</td>
+                <td>20</td>
+                <td>20/04/2019</td>
+                <td>20/05/2019</td>
+                <td>Nguyễn Thị Nga</td>
+                <td>
+                  <a class="btn btn-primary btn-sm" href="#">chờ sử lý</a>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">BD01345</td>
+                <td>
+                  <span class="badge badge-5">Gần hết hạn</span>
+                </td>
+                <td>Gói 1</td>
+                <td>20</td>
+                <td>20/04/2019</td>
+                <td>20/05/2019</td>
+                <td>Nguyễn Thị Nga</td>
+                <td>
+                  <a class="btn btn-primary btn-sm" href="#">chờ sử lý</a>
+                </td>
+              </tr>
+              <tr class="hide">
+                <td scope="row">BD01345</td>
+                <td>
+                  <span class="badge badge-5">Gần hết hạn</span>
+                </td>
+                <td>Gói 1</td>
+                <td>20</td>
+                <td>20/04/2019</td>
+                <td>20/05/2019</td>
+                <td>Nguyễn Thị Nga</td>
+                <td>
+                  <a class="btn btn-primary btn-sm">chờ sử lý</a>
+                </td>
+              </tr>
+              <tr class="hide">
+                <td scope="row">BD01345</td>
+                <td>
+                  <span class="badge badge-5">Gần hết hạn</span>
+                </td>
+                <td>Gói 1</td>
+                <td>20</td>
+                <td>20/04/2019</td>
+                <td>20/05/2019</td>
+                <td>Nguyễn Thị Nga</td>
+                <td>
+                  <a class="btn btn-primary btn-sm">chờ sử lý</a>
+                </td>
+              </tr>
+              <tr class="hide">
+                <td scope="row">BD01345</td>
+                <td>
+                  <span class="badge badge-5">Gần hết hạn</span>
+                </td>
+                <td>Gói 1</td>
+                <td>20</td>
+                <td>20/04/2019</td>
+                <td>20/05/2019</td>
+                <td>Nguyễn Thị Nga</td>
+                <td>
+                  <a class="btn btn-primary btn-sm">chờ sử lý</a>
+                </td>
+              </tr>
+              <tr class="hide">
+                <td scope="row">BD01345</td>
+                <td>
+                  <span class="badge badge-5">Gần hết hạn</span>
+                </td>
+                <td>Gói 1</td>
+                <td>20</td>
+                <td>20/04/2019</td>
+                <td>20/05/2019</td>
+                <td>Nguyễn Thị Nga</td>
+                <td>
+                  <a class="btn btn-primary btn-sm">chờ sử lý</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="text-center">
+            <a id="see-more" class="see-more link"
+              >Show more <i class="fas fa-angle-down"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="content-upload">
+          <h4 class="title-card">Lịch sử thuê</h4>
+          <div class="box-image">
+            <div class="container-img-left">
+              <div class="img">
+                <img src="./img/involve1.jpg" alt="" />
+                <div class="caption">
+                  <h4 class="title">Đây là title</h4>
+                  <p class="text">Lorem ipsum dolor sit, amet consectetur</p>
+                </div>
+              </div>
+            </div>
+            <div class="container-img-right">
+              <div class="img">
+                <img src="./img/background1.jpg" alt="" />
+                <div class="caption">
+                  <h4 class="title">Đây là title</h4>
+                  <p class="text">Lorem ipsum dolor sit, amet consectetur</p>
+                </div>
+              </div>
+              <div class="img">
+                <img src="./img/background1.jpg" alt="" />
+                <div class="caption">
+                  <h4 class="title">Đây là title</h4>
+                  <p class="text">Lorem ipsum dolor sit, amet consectetur</p>
+                </div>
+              </div>
+              <div class="img">
+                <img src="./img/background1.jpg" alt="" />
+                <div class="caption">
+                  <h4 class="title">Đây là title</h4>
+                  <p class="text">Lorem ipsum dolor sit, amet consectetur</p>
+                </div>
+              </div>
+              <div class="img">
+                <img src="./img/background1.jpg" alt="" />
+                <div class="caption">
+                  <h4 class="title">Đây là title</h4>
+                  <p class="text">Lorem ipsum dolor sit, amet consectetur</p>
+                </div>
+              </div>
+              <div class="img">
+                <img src="./img/background1.jpg" alt="" />
+                <div class="caption">
+                  <h4 class="title">Đây là title</h4>
+                  <p class="text">Lorem ipsum dolor sit, amet consectetur</p>
+                </div>
+              </div>
+              <div class="img">
+                <img src="./img/background1.jpg" alt="" />
+                <div class="caption">
+                  <h4 class="title">Đây là title</h4>
+                  <p class="text">Lorem ipsum dolor sit, amet consectetur</p>
+                </div>
+              </div>
+              <div class="img">
+                <img src="./img/background1.jpg" alt="" />
+                <div class="caption">
+                  <h4 class="title">Đây là title</h4>
+                  <p class="text">Lorem ipsum dolor sit, amet consectetur</p>
+                </div>
+              </div>
+              <div class="img">
+                <img src="./img/background1.jpg" alt="" />
+                <div class="caption">
+                  <h4 class="title">Đây là title</h4>
+                  <p class="text">Lorem ipsum dolor sit, amet consectetur</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="" class="see-more link"
+              >Show more <i class="fas fa-angle-down"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- ----------footer-------------- -->
+    <footer></footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/control.js"></script>
+  </body>
+</html>

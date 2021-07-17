@@ -1,0 +1,38 @@
+footer {
+  background-color: #151515 !important;
+  .box-fl{
+    display: flex;
+    justify-content: space-between;
+    padding: 4em 0;
+    @media (max-width:$mb-screen) {
+      flex-direction: column;
+    }
+    .list-menu{
+      padding: 1em;
+      .link{
+        padding: 0.5em 1em;
+        color: $color-white;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+    .list-media{
+      padding: 1em;
+
+      .item{
+        padding: 0.5em 1em;
+        color: $color-white;
+        font-size: 1rem;
+      }
+    }
+  }
+  .info-ft {
+    background: #000;
+    margin: 0;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #ffffff;
+  }
+}

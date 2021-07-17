@@ -1,0 +1,14 @@
+.title-section{
+    text-align: center;
+    .title{
+        color: $color-white;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .line{
+        margin: 2em auto;
+        border-bottom: 4px solid #ffc107;
+        width: 10%;
+        
+    }
+}
